@@ -2,9 +2,7 @@
 
 #include "my_lib.h"
 
-int main(int, char**) {
-    int a = 1;
-    int b = 3;
+int main(int, char **) {
     print_hello();
     return 0;
 }

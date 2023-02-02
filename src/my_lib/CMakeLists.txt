@@ -19,3 +19,9 @@ target_set_warnings(
     ${ENABLE_WARNINGS}
     AS_ERRORS
     ${ENABLE_WARNINGS_AS_ERRORS})
+
+add_linter_tool_to_target(${LIBRARY_NAME})
+
+if(${ENABLE_LTO})
+    target_enable_lto(${LIBRARY_NAME} optimized)
+endif()
