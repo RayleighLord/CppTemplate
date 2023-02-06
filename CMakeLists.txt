@@ -60,6 +60,7 @@ if(ENABLE_LTO)
 endif() 
 
 
+
 # Add external libraries
 FetchContent_Declare(
     Catch2
@@ -70,9 +71,11 @@ FetchContent_Declare(
 FetchContent_MakeAvailable(Catch2)
 
 
+
 # Testing
 include(CTest)
 enable_testing()
+
 
 
 # Add subdirectories

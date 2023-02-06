@@ -31,7 +31,7 @@ if(ENABLE_TESTING)
             "${PROJECT_SOURCE_DIR}/cmake/*"
             "${PROJECT_SOURCE_DIR}/docs/*"
             "${PROJECT_SOURCE_DIR}/external/*"
-            "${PROJECT_SOURCE_DIR}/tests/*"
+            "${PROJECT_SOURCE_DIR}/test/*"
             "${PROJECT_SOURCE_DIR}/build/*"
             "/usr/include/*")
         setup_target_for_coverage_lcov(
