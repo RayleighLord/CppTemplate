@@ -5,7 +5,8 @@ if(ENABLE_TESTING)
         "")
 
     add_executable(${UNIT_TEST_NAME} 
-        ${TEST_SOURCES} ${TEST_HEADERS})
+        ${TEST_SOURCES} 
+        ${TEST_HEADERS})
 
     target_link_libraries(${UNIT_TEST_NAME} PUBLIC 
         ${LIBRARY_NAME})
@@ -22,7 +23,10 @@ if(ENABLE_TESTING)
 
     add_linter_tool_to_target(${UNIT_TEST_NAME})
 
-    add_test(NAME ${UNIT_TEST_NAME} COMMAND ${UNIT_TEST_NAME})
+    add_test(NAME 
+        ${UNIT_TEST_NAME} 
+        COMMAND 
+        ${UNIT_TEST_NAME})
 
     if(ENABLE_COVERAGE)
         set(COVERAGE_MAIN "coverage")

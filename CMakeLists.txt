@@ -15,12 +15,11 @@ set(CMAKE_EXPORT_COMPILE_COMMANDS ON)
 
 # Options
 option(ENABLE_WARNINGS "Enable compiler warnings." ON)
-option(ENABLE_WARNINGS_AS_ERRORS "Enable to treat warnings as errors." OFF)
+option(ENABLE_WARNINGS_AS_ERRORS "Treat compiler warning as errors" OFF)
 
 option(ENABLE_TESTING "Enable a Unit Testing build." ON)
 option(ENABLE_COVERAGE "Enable a Code Coverage build." OFF)
 
-option(ENABLE_INCLUDE_WHAT_YOU_USE "Enable to add iwyu." OFF)
 option(ENABLE_CLANG_TIDY "Enable to add clang tidy." ON)
 option(ENABLE_CPPCHECK "Enable to add cppcheck." OFF)
 
@@ -37,8 +36,8 @@ set(EXECUTABLE_NAME "main")
 
 
 set(CMAKE_MODULE_PATH "${PROJECT_SOURCE_DIR}/cmake/")
-include(FetchContent)
 
+include(FetchContent)
 include(Docs) 
 include(Warnings) 
 include(Tools)
@@ -83,10 +82,3 @@ add_subdirectory(external)
 add_subdirectory(src)
 add_subdirectory(app)
 add_subdirectory(test)
-
-
-
-# CPack
-set(CPACK_PROJECT_NAME ${PROJECT_NAME})
-set(CPACK_PROJECT_VERSION ${PROJECT_VERSION})
-include(CPack)
