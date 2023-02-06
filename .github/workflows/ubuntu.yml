@@ -13,7 +13,6 @@ jobs:
       - uses: actions/checkout@v2
       - name: install
         run: |
-          sudo apt-get update
           make install_tests
       - name: prepare
         run: |
@@ -27,6 +26,6 @@ jobs:
       - name: testing
         run: |
           cd build
-          cd tests
+          cd test
           ./unit_tests
           bash <(curl -s https://codecov.io/bash)
