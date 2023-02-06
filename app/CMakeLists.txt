@@ -1,5 +1,5 @@
 set(EXE_SOURCES 
-    "main.cpp")
+    "${CMAKE_CURRENT_SOURCE_DIR}/main.cpp")
 
 add_executable(${EXECUTABLE_NAME} ${EXE_SOURCES})
 

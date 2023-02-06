@@ -1,10 +1,10 @@
 set(LIBRARY_SOURCES
-    "my_lib.cpp")
+    "${CMAKE_CURRENT_SOURCE_DIR}/my_lib.cpp")
 set(LIBRARY_HEADERS
-    "my_lib.h")
+    "${CMAKE_CURRENT_SOURCE_DIR}/my_lib.h")
 
-set(LIBRARY_INCLUDES
-    ${CMAKE_CURRENT_SOURCE_DIR})
+set(LIBRARY_INCLUDES 
+    "./" "${CMAKE_BINARY_DIR}/configured_files/include")
 
 add_library(${LIBRARY_NAME} STATIC 
     ${LIBRARY_SOURCES} 
