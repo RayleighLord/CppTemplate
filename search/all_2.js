@@ -1,5 +1,4 @@
 var searchData=
 [
-  ['my_5flib_2ecpp_3',['my_lib.cpp',['../my__lib_8cpp.html',1,'']]],
-  ['my_5flib_2eh_4',['my_lib.h',['../my__lib_8h.html',1,'']]]
+  ['divide_2',['divide',['../namespacemathlib.html#a4898b36ad5392cce955db936861a2c78',1,'mathlib']]]
 ];

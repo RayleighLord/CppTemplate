@@ -1,4 +1,5 @@
 var searchData=
 [
-  ['print_5fhello_5',['print_hello',['../my__lib_8cpp.html#a2296ecba847a3c1aca49be5d0f8e40ee',1,'print_hello():&#160;my_lib.cpp'],['../my__lib_8h.html#af63a76a9eb5e102567659508714ba3f1',1,'print_hello():&#160;my_lib.cpp']]]
+  ['factorial_3',['factorial',['../namespacemathlib.html#af70d71c07fa3e54fb41dd803e6645921',1,'mathlib']]],
+  ['fibonacci_4',['fibonacci',['../namespacemathlib.html#a553329a2484693dfb519b43c5565f30e',1,'mathlib']]]
 ];
