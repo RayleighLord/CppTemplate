@@ -26,6 +26,6 @@ cd app
 cd build
 cmake -DCMAKE_BUILD_TYPE=Debug ..
 cmake --build . --config Debug --target unit_tests
-cd tests
+cd test
 ./unit_tests
 ```
